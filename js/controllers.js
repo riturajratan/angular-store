@@ -50,7 +50,7 @@ angular.module('bagApp.controllers', [])
 }])
 .controller("loginCtrl", ["$scope", "userFact", function($scope, userFact){
 	$scope.checkLogin = function(){
-		if($scope.loginid == "admin" && $scope.pwd == "123"){
+		if($scope.loginid == "xebia" && $scope.pwd == "xebia"){
 			$scope.invalid = false;
 			userFact.doLogin($scope.loginid);
 			history.back();
