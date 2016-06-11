@@ -60,8 +60,5 @@ var bagApp = angular.module("bagApp", [
 .run(["plist", function(plist){
 	plist.getprod(function(data){
 		plist.product = data;
-		data.forEach(function(item){
-			if(item.featured) plist.featured.push(item);
-		});
 	});
 }]);
