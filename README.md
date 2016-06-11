@@ -4,6 +4,6 @@ A shopping cart Demo
 
 For login use below details
 
-######  username  admin
+######  username  xebia
  
-######  password  123
+######  password  xebia
