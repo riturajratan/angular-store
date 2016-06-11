@@ -1,0 +1,119 @@
+[{
+	"id" : "1",
+	"title" : "Apple",
+	"shortDesc" : "Eat one everyday to keep doctor away",
+	"price" : 12.00,
+	"image" : "img/apple.jpg",
+	"informations" : [{
+		"name" : "Calories",
+		"value" : 90
+	},
+	{
+		"name" : "Caratenoids",
+		"value" : "None",
+		"desc"	: "Negligible",
+		"ingrediantInfo" : "below 5% of the recommended daily value"
+	},
+	{
+		"name" : "Fiber",
+		"value" : "Average",
+		"desc"	: "Average",
+		"ingrediantInfo" : "between 10 and 20% of the recommended daily value"
+	},
+	{
+		"name" : "Potassium",
+		"value" : "Average",
+		"desc"	: "Average",
+		"ingrediantInfo" : "between 10 and 20% of the recommended daily value"
+	},
+	{
+		"name" : "Vitamin C",
+		"value" : "Average",
+		"desc"	: "Average",
+		"ingrediantInfo" : "between 10 and 20% of the recommended daily value"
+	}]
+},
+{
+	"id" : "2",
+	"title" : "Grapes",
+	"shortDesc" : "Wine is great but grapes are even better",
+	"price" : 8.00,
+	"image" : "img/grapes.png",
+	"informations" : [{
+		"name" : "Calories",
+		"value" : 90
+	},
+	{
+		"name" : "Caratenoids",
+		"value" : "None",
+		"desc"	: "Negligible"
+	},
+	{
+		"name" : "Caratenoids",
+		"value" : "None",
+		"desc"	: "Negligible"
+	}]
+},
+{
+	"id" : "3",
+	"title" : "Grapefruit",
+	"shortDesc" : "Pink or red always healthy and delicious",
+	"price" : 11.00,
+	"image" : "img/grapefruit.jpg",
+	"informations" : [{
+		"name" : "Calories",
+		"value" : 90
+	},
+	{
+		"name" : "Caratenoids",
+		"value" : "None",
+		"desc"	: "Negligible"
+	},
+	{
+		"name" : "Caratenoids",
+		"value" : "None",
+		"desc"	: "Negligible"
+	}]
+},
+{
+	"id" : "4",
+	"title" : "Papaya",
+	"shortDesc" : "Super popular for breakfast",
+	"price" : 5.00,
+	"image" : "img/Papaya.jpg",
+	"informations" : [{
+		"name" : "Calories",
+		"value" : 90
+	},
+	{
+		"name" : "Caratenoids",
+		"value" : "None",
+		"desc"	: "Negligible"
+	},
+	{
+		"name" : "Caratenoids",
+		"value" : "None",
+		"desc"	: "Negligible"
+	}]
+},
+{
+	"id" : "5",
+	"title" : "Pineapple",
+	"shortDesc" : "Enjoy it but dont forget to peel it first",
+	"price" : 5.00,
+	"image" : "img/paineapple.jpg",
+	"informations" : [{
+		"name" : "Calories",
+		"value" : 90
+	},
+	{
+		"name" : "Caratenoids",
+		"value" : "None",
+		"desc"	: "Negligible"
+	},
+	{
+		"name" : "Caratenoids",
+		"value" : "None",
+		"desc"	: "Negligible"
+	}]
+}]

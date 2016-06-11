@@ -1,0 +1,17 @@
+<form class="login" ng-submit="checkLogin()">
+	<div class="error" ng-show="invalid">Error</div>
+
+	<div class="formCtrl clearfix">
+		<label>Login ID:</label>
+		<input class="form-control" type="text" ng-model="loginid" placeholder="Enter Login Id" required />
+	</div>
+
+	<div class="formCtrl clearfix">
+		<label>Password:</label>
+		<input class="form-control" type="password" ng-model="pwd" placeholder="Enter Password" required />
+	</div>
+
+	<div class="formCtrl btnholder">
+		<input type="submit" class="btn btn-primary" value="SUBMIT" />
+	</div>
+</form>

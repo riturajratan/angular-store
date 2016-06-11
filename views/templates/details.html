@@ -1,0 +1,36 @@
+<h2><img src="{{productItem.image}}"> {{ productItem.title }}</h2>
+
+<section class="prod-info">
+<div class="row">
+
+<div class="col-md-9 col-sm-9">
+	<div class="info">
+	<table class="table table-bordered">
+    <thead class="well">
+      <tr>
+        
+        <th>Product Name</th>
+        <th>Product Value</th>
+          <th>Descraption</th>
+      </tr>
+    </thead>
+    <tbody>
+     	<tr ng-repeat="info in productItem.informations">
+				<td>{{info.name}}</td>
+				<td>{{info.value}}</td>
+				<td><strong>{{info.desc}}</strong> {{info.ingrediantInfo}}</td>
+			</tr>
+     
+      
+    </tbody>
+  </table>
+	</div>
+	</div>
+	<div class="col-md-3 col-sm-3">
+	<div class="actionContainer">
+		<button class="btn btn-raised btn-danger" ng-click="updateCart(this);">Add to Cart</button>
+		<button class="btn btn-raised btn-info" ng-click="go('/home')">Back to store</button>
+	</div>
+	</div>
+	</div>
+</section>

@@ -1,0 +1,36 @@
+<p>Welcome to the angular store. <br/>
+Please select product you want and add them to your shopping cart. <br/>
+When you are done, click the shopping cart icon to review your cart and check out</p>
+
+
+       <div class="searchbox"><b>Search : </b><input type="text" class=" form-control" name="search" placeholder="Search" value="" ng-model="search"></div>
+        
+  
+
+<div class="prod-view clearfix">
+	
+	 <div class="table-responsive ">          
+  <table class="table table-bordered">
+  
+    <tbody>
+      <tr class="well">
+        <td colspan="4" class="text-right">
+          <b> {{ cartProductList.length }} items ${{ total | number:2}}</b>
+        </td>
+    </tr>
+      <tr  ng-repeat="prod in productList | filter:search">
+        <td align="center"><img ng-src="{{ prod.image }}" alt="{{ prod.title }}" /></td>
+        <td><a href="#/product/{{ prod.id }}">{{prod.title}} <br/></a>
+			      <span>{{prod.shortDesc}}</span></td>
+        <td>${{prod.price}}</td>
+     
+        <td><a  ng-click="updateCart(this);">Add to cart</a></td>
+     
+      </tr>
+      <tr ng-show="(productList | filter:search).length === 0">
+         <td align="center">No result Found :( </td>
+      </tr>
+
+    </tbody>
+  </table>
+  </div>

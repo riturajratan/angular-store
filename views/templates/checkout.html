@@ -1,0 +1,62 @@
+<p>Thanks for shopping at angular store. <br/>
+This is your shopping cart here you can edit the items, go back to the store, clear the cart or checkout</p>
+
+<section class="prod-info">
+<div class="row">
+
+<div class="col-md-9 col-sm-9">
+	<div class="info">
+	 <div class="table-responsive ">  
+	<table class="table table-bordered">
+    <thead>
+      <tr class="well">
+        
+        <th>Item</th>
+        <th>Quantity</th>
+          <th>Price</th>
+          <th>&nbsp;</th>
+      </tr>
+    </thead>
+    <tbody>
+     	<tr ng-repeat="data in cartProductList" ng-init="data.qty = 1">
+				<td>{{ data.title }}</td>
+				<td>
+  <input type="number" class="qty-box" min="0" max="{{ data.stock }}" ng-model="data.qty" ng-change="updateTotal()" />
+  <input type='button' value='-' class='qtyminus btn btn-primary' field='quantity' ng-click="data.qty = data.qty - 1" />
+   <input type='button' value='+' class='qtyplus btn btn-raised btn-danger' field='quantity' ng-click="data.qty = data.qty + 1" /></td>
+				<td>
+					<p class="list-price" ng-show="{{ data.listPrice }}">
+						$<span>{{ data.listPrice * data.qty | number:2 }}</span>
+					</p>
+					<p><sup>$</sup>{{ data.price * data.qty | number:2 }}</p>
+				</td>
+				<td><button class="btn btn-default" ng-click="removeItem(this)"><b>X</b></button></td>
+			</tr>
+     
+      <tr class="cart-total-foot">
+				<td>Total</td>
+				<td>{{ cartProductList.length }}</td>
+				<td><span ng-show="cartProductList.length">${{ total | number:2}}</span></td>
+				<td>&nbsp;</td>
+			</tr>
+    </tbody>
+  </table>
+  </div>
+
+	
+	</div>
+	</div>
+	<div class="col-md-3 col-sm-3">
+	<div class="actionContainer">
+		<button class="btn btn-raised btn-primary" ng-click="go('/home')">Back to store</button>
+		<button class="btn btn-raised btn-danger" ng-click="clearCart()">Clear Cart</button>
+	</div>
+	<div class="text-center"><img src="img/btn_xpressCheckout.gif"></div>
+	</div>
+	</div>
+</section>
+
+<div class="no-item" ng-hide="cartProductList.length">
+	<p><b>There is no item in your cart.</b></p>
+	<a class="btn btn-raised btn-primary ripple-effect" href="#/">Choose some products from our store</a>
+</div>
