@@ -80,7 +80,7 @@
 	"title" : "Papaya",
 	"shortDesc" : "Super popular for breakfast",
 	"price" : 5.00,
-	"image" : "img/Papaya.jpg",
+	"image" : "img/papaya.jpg",
 	"informations" : [{
 		"name" : "Calories",
 		"value" : 90
